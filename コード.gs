@@ -1,11 +1,11 @@
 function getReport() {
   var spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
-  var sheet = spreadsheet.getSheetByName("メルマガ一覧").activate();
+  var sheet = spreadsheet.getSheetByName("#シート名").activate();
   // mailchimp APIから必要な情報を取得
   var urlFetchOption = {
     'method' : 'get',
     'headers':{
-      'Authorization':'Bearer '+'3224410ef775f0f1a9d82d30046878f1-us16'
+      'Authorization':'Bearer '+'#シークレットキー'
     },
   };
   
